@@ -1,0 +1,57 @@
+@import '../styles/_variables.sass'
+
+
+.navigation
+	max-width: 65%
+	display: flex
+	justify-content: space-between
+	padding: 15px 0
+	border-bottom: 1px solid #c8c8c8
+	margin: 0 auto
+
+.logoBox
+	max-width: 60%
+	display: flex
+	align-items: center
+
+.logo
+	display: flex
+	color: #d91414
+	flex-direction: column
+	justify-content: center
+	margin: 0
+
+.anchor__home
+    color: inherit
+    text-decoration: none
+
+.socialBox
+	max-width: 30%
+	display: flex
+	align-items: center
+	> a
+		color: black
+
+
+.socialIcon
+	margin: 0 10px
+	font-size: 2.5rem
+	height: 32px
+	width: 32px
+	transition: stroke,transform 2s easein
+	&:hover
+		stroke: $primary-color
+		transform: scale(0.85)
+
+
+@media only screen and (max-width: 1024px)
+	.navigation
+    max-width: 70%
+
+@media only screen and (max-width: 768px)
+	.navigation
+    max-width: 85%
+
+@media only screen and (max-width: 460px)
+	.navigation
+    max-width: 95%

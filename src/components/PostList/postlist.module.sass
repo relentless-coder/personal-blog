@@ -1,0 +1,26 @@
+@import '../../styles/_variables.sass'
+
+.postItem
+  display: flex
+  flex-direction: column
+  padding: 0.5rem 0.25rem
+  margin-bottom: 2rem
+  align-items: flex-start
+
+.postItemHeading
+  color: $primary-color
+  font-size: 1.5rem
+  transition: color 0.25s ease-in
+  text-decoration: $primary-color
+  margin-bottom: 0.5rem
+  &:hover
+    color: $border-color
+
+.postItemCategory
+  font-size: 0.9rem
+  padding: 0.25rem 0.5rem
+  color: $border-color
+  border-radius: 5px
+  margin-bottom: 1rem
+  &:hover
+    color: $primary-color

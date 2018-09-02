@@ -1,0 +1,58 @@
+@import variables
+@import fonts
+
+*
+  box-sizing: border-box
+
+html
+  margin: 0
+  overflow-x: hidden
+  font-size: 100%
+
+body
+  margin: 0
+  font-size: 100%
+
+//headers
+h1
+  +header("Meslo Bold", 2rem, bold)
+  margin: 0.25rem
+
+h2
+  +header("Meslo Bold", 1.7rem, bold)
+  margin: 0.15rem
+
+h3
+  +header("Meslo Bold", 1.5rem, bold)
+  margin: 0.9rem
+
+h4
+  +header("Meslo Bold", 1.3rem, bold)
+  margin: 0.7rem
+
+h5
+  +header("Meslo Bold", 1.1rem, bold)
+  margin: 0.5rem
+
+small
+  +header("Proxima Regular", 0.9rem, normal)
+
+p
+  +header("Proxima Regular", 1.3rem, normal)
+
+pre
+  padding: 0.5rem
+  border: 2px solid $border-color;
+  background: $code-background
+
+code
+  +header("Proxima Regular", 1rem, bold)
+
+a
+  +header("Meslo Bold", inherit, bold)
+  text-decoration: dashed
+  color: $primary-color
+
+@media only screen and (max-width: 1024px)
+	.navigation, .blogPostContainer
+    max-width: 70%
