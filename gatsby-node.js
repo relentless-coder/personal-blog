@@ -18,7 +18,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   }
 
   const setupTagPages = (tag => {
-    console.log("about to be created")
     createPage({
       path: `/tags/${_.kebabCase(tag)}/`,
       component: tagTemplate,
